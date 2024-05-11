@@ -1,0 +1,161 @@
+.creations {
+  margin-top: 13rem;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 4rem 1fr 4rem;  
+  @media only screen and (max-width: $bp-large){
+    padding: 0 4rem;
+  }
+  &__title {
+    width: 100%;
+    @media only screen and (max-width: $bp-small){
+      grid-column: 1 / 3;
+      display: flex;
+      justify-content: center;
+    }
+    & h3 {
+      font-size: 3.6rem;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+  }
+  &__btn {
+    display: flex;
+    justify-content: flex-end;
+    @media only screen and (max-width: $bp-small){
+      grid-row: 3;
+      grid-column: 1 / 3;
+      display: flex;
+      justify-content: center;
+    }
+    & button {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      padding: 0 2.8rem;
+      letter-spacing: 1.6;
+      background-color: transparent;
+      border: 2px solid var(--dark-gray);
+      font-family: "Alata", sans-serif;
+      transition: all .2s ease-in-out;
+      cursor: pointer;
+    }
+    & button:hover {
+      background-color: var(--black);
+      color: var(--white);
+    }
+  }
+  &__gallery {
+    display: grid;
+    margin-top: 5rem;
+    grid-template-columns: repeat( auto-fit, minmax(25rem, 1fr));
+    grid-gap: 1rem;
+    grid-column: 1 / 3;
+    @media only screen and (max-width: $bp-small){
+      grid-template-columns: 1fr;
+      margin-bottom: 3rem;
+    }
+    &--img {
+      background-repeat: no-repeat;
+      position: relative;
+      background-size: cover;
+      cursor: pointer;
+      min-width: 25.6rem;
+      min-height: 45rem;
+      @media only screen and (max-width: $bp-small){
+        min-width: 24rem;
+        min-height: 18rem;
+        background-position: center;
+      }
+      & img {
+        opacity: 0;
+        visibility: hidden;
+      }
+      &_title {
+        position: absolute;
+        bottom: 0;
+        margin-left: 3rem;
+        margin-bottom: 3rem;
+        z-index: 10;
+        & p {
+          color: rgba(255, 255, 255, 0.67);
+          font-size: 2.6rem;
+          font-weight: 300;
+          text-transform: uppercase;
+          & span {
+            display: block;
+          }
+        }
+      }
+    }
+    &--img::after {
+      transition: all .2s ease-in-out;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(20deg, rgba(0, 0, 0, 0.622), rgba(255, 255, 255, 0.011));
+      z-index: 1;
+    }
+    &--img:hover:after {
+      background-image: none;
+      background-color: rgba(255, 255, 255, 0.764);
+      z-index: 5;
+    }
+    &--img:hover p {
+      color: var(--black); 
+    }    
+    .deep-earth {
+      background-image: url('../images/desktop/image-deep-earth.jpg');
+    }
+    .night-arcade {
+      background-image: url('../images/desktop/image-night-arcade.jpg');
+    }
+    .soccer-team {
+      background-image: url('../images/desktop/image-soccer-team.jpg');
+    }
+    .image-grid {
+      background-image: url('../images/desktop/image-grid.jpg');
+    }
+    .from-above {
+      background-image: url('../images/desktop/image-from-above.jpg');
+    }
+    .pocket-borealis {
+      background-image: url('../images/desktop/image-pocket-borealis.jpg');
+    }
+    .curiosity {
+      background-image: url('../images/desktop/image-curiosity.jpg');
+    }
+    .fisheye {
+      background-image: url('../images/desktop/image-fisheye.jpg');
+    }
+    @media only screen and (max-width: $bp-small){
+      .deep-earth {
+        background-image: url('../images/mobile/image-deep-earth.jpg');
+      }
+      .night-arcade {
+        background-image: url('../images/mobile/image-night-arcade.jpg');
+      }
+      .soccer-team {
+        background-image: url('../images/mobile/image-soccer-team.jpg');
+      }
+      .image-grid {
+        background-image: url('../images/mobile/image-grid.jpg');
+      }
+      .from-above {
+        background-image: url('../images/mobile/image-from-above.jpg');
+      }
+      .pocket-borealis {
+        background-image: url('../images/mobile/image-pocket-borealis.jpg');
+      }
+      .curiosity {
+        background-image: url('../images/mobile/image-curiosity.jpg');
+      }
+      .fisheye {
+        background-image: url('../images/mobile/image-fisheye.jpg');
+      }
+    }
+  }
+}

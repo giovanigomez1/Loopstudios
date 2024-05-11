@@ -12,7 +12,6 @@
   <title>Frontend Mentor | Loopstudios landing page</title>
   <link rel="stylesheet" href="./css/style.css">
 
-
 </head>
 <body>
   <main class="hero">
@@ -21,6 +20,9 @@
         <div class="hero__nav--logo">
           <img src="./images/logo.svg" alt="">
         </div>
+        <input class="hero__nav--menu-check" type="checkbox" id="menu">
+        <label for="menu" class="hero__nav--menu-label">
+        </label>
         <ul class="hero__nav--menu">
           <li><a href="#">About</a></li>
           <li><a href="#">Careers</a></li>
@@ -30,7 +32,6 @@
         </ul>
       </nav>
     </div>
-
     <div class="hero__text container">
       <div class="hero__text--message">
         <h1>Immersive 
@@ -40,7 +41,6 @@
       </div>
     </div>
   </main>
-
   <section class="interactive container">
     <div class="interactive__image">
       <img src="./images/desktop/image-interactive.jpg" alt="">
@@ -54,78 +54,61 @@
       </p>
     </div>
   </section>
-
-
   <section class="creations container">
     <div class="creations__title">
       <h3>Our creations</h3>
+    </div>
+    <div class="creations__btn">
       <button>See all</button>
     </div>
     <div class="creations__gallery">
       <div class="creations__gallery--img deep-earth">
-        <img src="./images/desktop/image-deep-earth.jpg" alt="">
         <div class="creations__gallery--img_title">
           <p>Deep <span>Earth</span></p>
         </div>
       </div>
       <div class="creations__gallery--img night-arcade">
-        <img src="./images/desktop/image-night-arcade.jpg" alt="">
         <div class="creations__gallery--img_title">
           <p>Night <span>arcade</span></p>
         </div>
       </div>
       <div class="creations__gallery--img soccer-team">
-        <img src="./images/desktop/image-soccer-team.jpg" alt="">
         <div class="creations__gallery--img_title">
           <p>Soccer <span>team VR</span></p>
         </div>
       </div>
       <div class="creations__gallery--img image-grid">
-        <img src="./images/desktop/image-grid.jpg" alt="">
         <div class="creations__gallery--img_title">
           <p>The <span>grid</span></p>
         </div>
       </div>
       <div class="creations__gallery--img from-above">
-        <img src="./images/desktop/image-from-above.jpg" alt="">
         <div class="creations__gallery--img_title">
           <p>From up <span>above VR</span></p>
         </div>
       </div>
       <div class="creations__gallery--img pocket-borealis">
-        <img src="./images/desktop/image-pocket-borealis.jpg" alt="">
         <div class="creations__gallery--img_title">
           <p>Pocket <span>borealis</span></p>
         </div>
       </div>
       <div class="creations__gallery--img curiosity">
-        <img src="./images/desktop/image-curiosity.jpg" alt="">
         <div class="creations__gallery--img_title">
           <p>The <span>curiosity</span></p>
         </div>
       </div>
       <div class="creations__gallery--img fisheye">
-        <img src="./images/desktop/image-fisheye.jpg" alt="">
         <div class="creations__gallery--img_title">
           <p>Make it <span>fisheye</span></p>
         </div>
       </div>
     </div>
   </section>
-
   <footer class="footer">
     <div class="footer__logo_social container">
       <div class="footer__logo_social-img">
         <img src="./images/logo.svg" alt="">
       </div>
-      <ul class="footer__logo_social-net">
-        <li><a href="#"><img src="./images/icon-facebook.svg" alt=""></a></li>
-        <li><a href="#"><img src="./images/icon-twitter.svg" alt=""></a></li>
-        <li><a href="#"><img src="./images/icon-pinterest.svg" alt=""></a></li>
-        <li><a href="#"><img src="./images/icon-instagram.svg" alt=""></a></li>
-      </ul>
-    </div>
-    <div class="footer__menu_rights container">
       <ul class="footer__menu_rights--menu">
         <li><a href="#">About</a></li>
         <li><a href="#">Careers</a></li>
@@ -133,10 +116,16 @@
         <li><a href="#">Products</a></li>
         <li><a href="#">Support</a></li>
       </ul>
+      <ul class="footer__logo_social-net">
+        <li><a href="#"><img src="./images/icon-facebook.svg" alt=""></a></li>
+        <li><a href="#"><img src="./images/icon-twitter.svg" alt=""></a></li>
+        <li><a href="#"><img src="./images/icon-pinterest.svg" alt=""></a></li>
+        <li><a href="#"><img src="./images/icon-instagram.svg" alt=""></a></li>
+      </ul>
       <div class="footer__menu_rights--rights">
         <p>© 2021 Loopstudios. All rights reserved.</p>
         <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
-        <p>Coded by <a href="#">Your Name Here</a>.</p>
+        <p>Coded by <a href="#">Giovani</a>.</p>
       </div>
     </div>
   </footer>
