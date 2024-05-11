@@ -477,6 +477,11 @@ body {
   }
 }
 
+.footer__logo_social-img {
+  align-items: center;
+  display: flex;
+}
+
 .footer__logo_social img {
   height: 2rem;
 }

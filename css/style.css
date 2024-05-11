@@ -320,6 +320,9 @@ body {
         grid-template-rows: 1fr;
         justify-items: center;
         grid-gap: 3rem; } }
+    .footer__logo_social-img {
+      display: flex;
+      align-items: center; }
     .footer__logo_social img {
       height: 2rem; }
     .footer__logo_social-net {
